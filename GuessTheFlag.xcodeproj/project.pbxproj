@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11F3FAE02A9CAB0100BF0D5A /* FlagImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3FADF2A9CAB0100BF0D5A /* FlagImageComponent.swift */; };
+		11F3FAE22A9CACDD00BF0D5A /* MyTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3FAE12A9CACDD00BF0D5A /* MyTitle.swift */; };
+		11F3FAE42A9CAE4A00BF0D5A /* ContentFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3FAE32A9CAE4A00BF0D5A /* ContentFrame.swift */; };
 		11F5BE452A98AF04004573ED /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5BE442A98AF04004573ED /* GuessTheFlagApp.swift */; };
 		11F5BE472A98AF04004573ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5BE462A98AF04004573ED /* ContentView.swift */; };
 		11F5BE492A98AF05004573ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F5BE482A98AF05004573ED /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11F3FADF2A9CAB0100BF0D5A /* FlagImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagImageComponent.swift; sourceTree = "<group>"; };
+		11F3FAE12A9CACDD00BF0D5A /* MyTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTitle.swift; sourceTree = "<group>"; };
+		11F3FAE32A9CAE4A00BF0D5A /* ContentFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentFrame.swift; sourceTree = "<group>"; };
 		11F5BE412A98AF04004573ED /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F5BE442A98AF04004573ED /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
 		11F5BE462A98AF04004573ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				11F5BE442A98AF04004573ED /* GuessTheFlagApp.swift */,
+				11F3FADF2A9CAB0100BF0D5A /* FlagImageComponent.swift */,
+				11F3FAE12A9CACDD00BF0D5A /* MyTitle.swift */,
+				11F3FAE32A9CAE4A00BF0D5A /* ContentFrame.swift */,
 				11F5BE462A98AF04004573ED /* ContentView.swift */,
 				11F5BE482A98AF05004573ED /* Assets.xcassets */,
 				11F5BE4A2A98AF05004573ED /* Preview Content */,
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F3FAE22A9CACDD00BF0D5A /* MyTitle.swift in Sources */,
 				11F5BE472A98AF04004573ED /* ContentView.swift in Sources */,
+				11F3FAE02A9CAB0100BF0D5A /* FlagImageComponent.swift in Sources */,
 				11F5BE452A98AF04004573ED /* GuessTheFlagApp.swift in Sources */,
+				11F3FAE42A9CAE4A00BF0D5A /* ContentFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

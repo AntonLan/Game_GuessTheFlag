@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var shovingScore = false
+    @State private var showingScore = false
     @State private var finalResult = false
     @State private var scoreTitle = ""
     @State private var scoreCount = 0
@@ -30,8 +30,7 @@ struct ContentView: View {
                 Spacer()
                 
                 Text("Gues the Flag")
-                    .font(.largeTitle.bold())
-                    .foregroundColor(.white)
+                    .modifier(MyTitle())
                 
                 VStack(spacing: 15) {
                     VStack() {
@@ -46,17 +45,11 @@ struct ContentView: View {
                         Button {
                             flagTapped(number)
                         } label: {
-                            Image(countries[number])
-                                .renderingMode(.original)
-                                .clipShape(Capsule())
-                                .shadow(radius: 5)
+                            FlagImage(nameCountrie: countries[number])
                         }
                     }
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 20)
-                .background(.thinMaterial)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .modifier(ContentFrame())
                 
                 Spacer()
                 Spacer()
@@ -70,7 +63,7 @@ struct ContentView: View {
             .padding()
             
         }
-        .alert(scoreTitle, isPresented: $shovingScore) {
+        .alert(scoreTitle, isPresented: $showingScore) {
             Button("Continue", action: askQuestion)
         }  message: {
             Text("You score is \(scoreCount)")
@@ -89,7 +82,7 @@ struct ContentView: View {
             return
         }
         
-        shovingScore = true
+        showingScore = true
         
         if number != correctAnswer {
             scoreTitle = "Wrong! That’s the flag of \(countries[number])"
